@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculator should render 1`] = `
+<div
+  className="calcContainer"
+>
+  <div>
+    <h2>
+      Do some math,
+      Buddy
+    </h2>
+  </div>
+  <div
+    className="caclResult"
+  />
+  <div
+    className="calcNumbers"
+  >
+    <label>
+      Numbers
+    </label>
+    <div>
+      <input
+        data-test-id="first"
+        onChange={[Function]}
+        value=""
+      />
+    </div>
+    <div>
+      <input
+        onChange={[Function]}
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="caclFunctions"
+  >
+    <button
+      data-test-id="button-add"
+      key="add"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      data-test-id="button-subtract"
+      key="subtract"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      data-test-id="button-multiply"
+      key="multiply"
+      onClick={[Function]}
+      type="button"
+    >
+      *
+    </button>
+    <button
+      data-test-id="button-divide"
+      key="divide"
+      onClick={[Function]}
+      type="button"
+    >
+      /
+    </button>
+  </div>
+</div>
+`;
+
+exports[`calculator should update props 1`] = `
+<Calculator
+  name="Mike"
+>
+  <div
+    className="calcContainer"
+  >
+    <div>
+      <h2>
+        Do some math,
+        Mike
+      </h2>
+    </div>
+    <div
+      className="caclResult"
+    />
+    <div
+      className="calcNumbers"
+    >
+      <label>
+        Numbers
+      </label>
+      <div>
+        <input
+          data-test-id="first"
+          onChange={[Function]}
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          onChange={[Function]}
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="caclFunctions"
+    >
+      <button
+        data-test-id="button-add"
+        key="add"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        data-test-id="button-subtract"
+        key="subtract"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        data-test-id="button-multiply"
+        key="multiply"
+        onClick={[Function]}
+        type="button"
+      >
+        *
+      </button>
+      <button
+        data-test-id="button-divide"
+        key="divide"
+        onClick={[Function]}
+        type="button"
+      >
+        /
+      </button>
+    </div>
+  </div>
+</Calculator>
+`;

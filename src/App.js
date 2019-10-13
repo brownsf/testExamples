@@ -1,25 +1,23 @@
-import React, { Component } from "react"
-import Calulator from './component/Calculator'
-import logo from "./logo.svg";
-import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import Calculator from './component/Calculator';
+import logo from './logo.svg';
+import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Home = () => <div>Home</div>;
 
-const Code = () => <div><Calulator/></div>;
+const Code = () => <div><Calculator /></div>;
 
-const MainMenu = () => {
-  return (
-    <div>
-      <Link to="/">
-        <button>home</button>
-      </Link>
-      <Link to="/code">
-        <button>code</button>
-      </Link>
-    </div>
-  );
-};
+const MainMenu = () => (
+  <div>
+    <Link to="/">
+      <button>home</button>
+    </Link>
+    <Link to="/code">
+      <button>code</button>
+    </Link>
+  </div>
+);
 
 class App extends Component {
   render() {
