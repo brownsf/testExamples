@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Calculator from './Calculator';
 
-describe('calculator', () => {
+describe.skip('calculator', () => {
   let component;
   beforeEach(() => {
     component = shallow(<Calculator />);

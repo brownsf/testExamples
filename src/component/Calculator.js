@@ -17,7 +17,7 @@ class Calculator extends React.Component {
     const calc = (func) => {
       switch (func) {
         case 'add':
-          this.setState({ result: utils.add(first, second) });
+          this.setState({ result: utils.add(Number(first), Number(second)) });
           break;
 
         default:
@@ -32,12 +32,13 @@ Do some math,
             {this.props.name}
           </h2>
         </div>
-        <div className="caclResult">{result}</div>
+        <div data-testid="result" className="caclResult">{result}</div>
         <div className="calcNumbers">
           <label>Numbers</label>
           <div>
             <input
-              data-test-id="first"
+              placeholder="First Number"
+              data-testid="first"
               value={first || ''}
               onChange={(e) => this.setState({ first: e.target.value })}
             />
@@ -45,6 +46,8 @@ Do some math,
 
           <div>
             <input
+              data-testid="second"
+              placeholder="Second Number"
               value={second || ''}
               onChange={(e) => this.setState({ second: e.target.value })}
             />
@@ -54,7 +57,7 @@ Do some math,
           {options.map((opt) => (
             <button
               type="button"
-              data-test-id={`button-${opt.type}`}
+              data-testid={`button-${opt.type}`}
               key={opt.type}
               onClick={() => calc(opt.type)}
             >
