@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import * as utils from '../Utils';
 
@@ -28,7 +27,7 @@ class Calculator extends React.Component {
       <div className="calcContainer">
         <div>
           <h2>
-Do some math,
+            Do some math,
             {this.props.name}
           </h2>
         </div>
