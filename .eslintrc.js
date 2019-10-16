@@ -1,7 +1,10 @@
 module.exports = {
-    "extends": "airbnb",
-    "plugins": ["jest"],
-    "env": {
-        "jest": true
-    }
+  extends: ['airbnb', 'plugin:cypress/recommended'],
+  plugins: ['jest'],
+  env: {
+    jest: true,
+  },
+  rules:{
+      "react/jsx-filename-extension":0
+  }
 };

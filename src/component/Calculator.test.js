@@ -19,7 +19,7 @@ describe.skip('calculator', () => {
 
     wrapper.setState({ first: 1, second: 2 });
 
-    wrapper.find('button[data-test-id="button-add"]').simulate('click');
+    wrapper.find('button[data-testid="button-add"]').simulate('click');
     expect(wrapper.state().result).toBe(3);
   });
 

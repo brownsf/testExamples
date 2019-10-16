@@ -12,6 +12,7 @@ exports[`calculator should render 1`] = `
   </div>
   <div
     className="caclResult"
+    data-testid="result"
   />
   <div
     className="calcNumbers"
@@ -21,14 +22,17 @@ exports[`calculator should render 1`] = `
     </label>
     <div>
       <input
-        data-test-id="first"
+        data-testid="first"
         onChange={[Function]}
+        placeholder="First Number"
         value=""
       />
     </div>
     <div>
       <input
+        data-testid="second"
         onChange={[Function]}
+        placeholder="Second Number"
         value=""
       />
     </div>
@@ -37,7 +41,7 @@ exports[`calculator should render 1`] = `
     className="caclFunctions"
   >
     <button
-      data-test-id="button-add"
+      data-testid="button-add"
       key="add"
       onClick={[Function]}
       type="button"
@@ -45,7 +49,7 @@ exports[`calculator should render 1`] = `
       +
     </button>
     <button
-      data-test-id="button-subtract"
+      data-testid="button-subtract"
       key="subtract"
       onClick={[Function]}
       type="button"
@@ -53,7 +57,7 @@ exports[`calculator should render 1`] = `
       -
     </button>
     <button
-      data-test-id="button-multiply"
+      data-testid="button-multiply"
       key="multiply"
       onClick={[Function]}
       type="button"
@@ -61,7 +65,7 @@ exports[`calculator should render 1`] = `
       *
     </button>
     <button
-      data-test-id="button-divide"
+      data-testid="button-divide"
       key="divide"
       onClick={[Function]}
       type="button"
@@ -87,6 +91,7 @@ exports[`calculator should update props 1`] = `
     </div>
     <div
       className="caclResult"
+      data-testid="result"
     />
     <div
       className="calcNumbers"
@@ -96,14 +101,17 @@ exports[`calculator should update props 1`] = `
       </label>
       <div>
         <input
-          data-test-id="first"
+          data-testid="first"
           onChange={[Function]}
+          placeholder="First Number"
           value=""
         />
       </div>
       <div>
         <input
+          data-testid="second"
           onChange={[Function]}
+          placeholder="Second Number"
           value=""
         />
       </div>
@@ -112,7 +120,7 @@ exports[`calculator should update props 1`] = `
       className="caclFunctions"
     >
       <button
-        data-test-id="button-add"
+        data-testid="button-add"
         key="add"
         onClick={[Function]}
         type="button"
@@ -120,7 +128,7 @@ exports[`calculator should update props 1`] = `
         +
       </button>
       <button
-        data-test-id="button-subtract"
+        data-testid="button-subtract"
         key="subtract"
         onClick={[Function]}
         type="button"
@@ -128,7 +136,7 @@ exports[`calculator should update props 1`] = `
         -
       </button>
       <button
-        data-test-id="button-multiply"
+        data-testid="button-multiply"
         key="multiply"
         onClick={[Function]}
         type="button"
@@ -136,7 +144,7 @@ exports[`calculator should update props 1`] = `
         *
       </button>
       <button
-        data-test-id="button-divide"
+        data-testid="button-divide"
         key="divide"
         onClick={[Function]}
         type="button"

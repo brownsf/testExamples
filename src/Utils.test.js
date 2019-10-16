@@ -8,8 +8,7 @@ it('adds numbers', () => {
   expect(value).toBeLessThanOrEqual(4.5);
 
   const floatingValue = 0.1 + 0.2;
-  // expect(value).toBe(0.3);           This won't work because of rounding error
-  expect(floatingValue).toBeCloseTo(0.3); // This works.
+  expect(floatingValue).toBeCloseTo(0.3);
 
 
   // toBe and toEqual are equivalent for numbers

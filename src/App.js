@@ -20,7 +20,7 @@ const MainMenu = () => (
 class App extends Component {
   render() {
     const setName = (name) => this.setState({ name });
-    const { name } = this.state||{};
+    const { name } = this.state || {};
     return (
       <Router>
         <div className="App">
@@ -30,7 +30,7 @@ class App extends Component {
             <MainMenu />
           </header>
           <div className="container">
-            <Route exact path="/" render={(props) => <Home {...props} setName={setName} />} />
+            <Route exact path="/" render={(props) => <Home {...props} name={name} setName={setName} />} />
             <Route exact path="/code" render={(props) => <Calculator name={name} {...props} />} />
           </div>
         </div>

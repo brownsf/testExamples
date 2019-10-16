@@ -1,12 +1,11 @@
 import '@testing-library/jest-dom/extend-expect';
-// NOTE: jest-dom adds handy assertions to Jest and is recommended, but not required
 
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Calculator from './Calculator';
 
-describe('test with testing library', () => {
+describe.skip('test with testing library', () => {
   it('shows the children when the checkbox is checked', () => {
     const testMessage = 'Do some math,Buddy';
     const { queryByText, getByLabelText, getByText } = render(
