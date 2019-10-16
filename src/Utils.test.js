@@ -18,6 +18,12 @@ it('adds numbers', () => {
   expect(Utils.add(1, 2)).toBe(3);
 });
 
+it('it should show equality', () => {
+  const testing = { name: 'test' };
+  expect(testing).toBe(testing);
+  expect(testing).toEqual({ name: 'test' });
+});
+
 it('combines strings', () => {
   const value = Utils.add('first', 'Name');
   expect(value).toBe('firstName');

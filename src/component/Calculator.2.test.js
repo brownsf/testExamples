@@ -5,7 +5,7 @@ import { render, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Calculator from './Calculator';
 
-describe.skip('test with testing library', () => {
+describe('test with testing library', () => {
   it('shows the children when the checkbox is checked', () => {
     const testMessage = 'Do some math,Buddy';
     const { queryByText, getByLabelText, getByText } = render(
